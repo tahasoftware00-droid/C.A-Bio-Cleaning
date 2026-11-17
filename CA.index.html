@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C.A Bio Cleaning Services - Upholstery Cleaning in Limassol, Cyprus</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+:root{--teal:#0F4C5C;--teal2:#134E5E;--green:#5FAA3F;--light:#F2F7F8;--dark:#1A1A1A}
+body{background:#fff;color:var(--dark)}
+a{text-decoration:none;color:inherit}
+.topbar{background:#0B3542;color:#fff;text-align:center;padding:8px;font-size:13px}
+.topbar b{color:#A8E063}
+header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 2px 15px rgba(0,0,0,.08)}
+.nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:16px;flex-wrap:wrap}
+.logo{display:flex;gap:10px;align-items:center}
+.logo-icon{width:44px;height:44px;background:var(--teal);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.logo b{font-size:20px;line-height:1}
+.logo span{font-size:11px;color:#666;letter-spacing:1px}
+.menu{display:flex;gap:26px;font-weight:500;font-size:14px;flex-wrap:wrap}
+.menu a:hover{color:var(--green)}
+.phone-btn{background:var(--green);color:#fff;padding:11px 18px;border-radius:30px;font-weight:700;font-size:14px}
+.hero{max-width:1200px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:1.1fr 1fr;gap:0;overflow:hidden;border-radius:0 0 20px 20px}
+.hero-left{background:var(--teal);color:#fff;padding:44px 36px;display:flex;flex-direction:column;justify-content:center}
+.hero-left h1{font-size:48px;line-height:1.1;margin:12px 0}
+.hero-left p{color:#D0E8E5;line-height:1.6}
+.rating{background:rgba(255,255,255,.15);display:inline-block;padding:7px 12px;border-radius:20px;font-size:13px;margin:14px 0}
+.btns{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+.btn{padding:13px 22px;border-radius:30px;font-weight:700;border:0;cursor:pointer;font-size:14px}
+.btn-green{background:var(--green);color:#fff}
+.btn-white{background:#fff;color:var(--teal)}
+.hero-right{min-height:380px;background:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900') center/cover}
+.section{max-width:1200px;margin:36px auto;padding:0 20px}
+.sec-head{text-align:center;margin-bottom:20px}
+.sec-head h2{font-size:30px;color:var(--teal)}
+.sec-head p{color:#777}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.s-card{background:#fff;border:1px solid #E6EFEF;border-radius:16px;padding:22px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,.04)}
+.s-card:hover{transform:translateY(-4px);border-color:var(--green)}
+.s-card .ic{font-size:36px}
+.s-card h3{margin:10px 0 6px;color:var(--teal)}
+.s-card p{font-size:13px;color:#777;line-height:1.5}
+.s-card button{margin-top:12px;background:var(--teal);color:#fff;border:0;padding:9px 16px;border-radius:20px;font-weight:600;cursor:pointer}
+.why{background:var(--light);border-radius:20px;padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
+.why b{font-size:22px;color:var(--teal);display:block}
+.why span{font-size:13px;color:#666}
+.quote{background:var(--teal);border-radius:20px;padding:30px;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.quote h2{font-size:28px;margin-bottom:8px}
+.form{background:#fff;border-radius:16px;padding:20px;color:#111}
+.form h3{margin-bottom:12px}
+.form input,.form select,.form textarea{width:100%;padding:12px;border:1px solid #ddd;border-radius:10px;margin-bottom:10px;outline:0}
+.form button{width:100%;background:var(--green);color:#fff;border:0;padding:13px;border-radius:10px;font-weight:700;cursor:pointer}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.r-card{background:#fff;border:1px solid #eee;border-radius:14px;padding:16px}
+.r-card .stars{color:#FFB400}
+footer{background:#0B3542;color:#ccc;margin-top:30px}
+.foot{max-width:1200px;margin:auto;padding:30px 20px;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:20px}
+.foot h4{color:#fff;margin-bottom:10px}
+.foot a{display:block;margin-bottom:7px;font-size:14px}
+.copy{text-align:center;padding:12px;border-top:1px solid #1E5566;font-size:12px}
+.wa-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;z-index:999;box-shadow:0 10px 20px rgba(0,0,0,.2)}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-left h1{font-size:32px}.services{grid-template-columns:repeat(2,1fr)}.why{grid-template-columns:repeat(2,1fr)}.quote{grid-template-columns:1fr}.reviews{grid-template-columns:1fr}.foot{grid-template-columns:1fr}.menu{display:none}}
+@media(max-width:480px){.services{grid-template-columns:1fr}.hero-left{padding:28px 20px}.hero-right{min-height:220px}}
+</style>
+</head>
+<body>
+<div class="topbar">⭐ <b>5.0 Rated</b> - 20 Google Reviews | Eco-Friendly & Bio Safe Cleaning in Limassol</div>
+<header><div class="nav"><div class="logo"><div class="logo-icon">🌿</div><div><b>C.A Bio</b><br><span>CLEANING SERVICES</span></div></div><div class="menu"><a href="#">Home</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div><a class="phone-btn" href="tel:+35799118497">📞 +357 99 118497</a></div></header>
+
+<div class="hero">
+  <div class="hero-left">
+    <span style="letter-spacing:2px;font-size:12px;color:#A8E063">● LIMASSOL, CYPRUS • ECO CLEANING</span>
+    <h1>Deep Clean.<br>Fresh Home.<br>Bio Safe.</h1>
+    <p>Professional upholstery cleaning for sofas, carpets, mattresses & curtains. Safe for kids, pets & allergies. We bring your furniture back to life.</p>
+    <div class="rating">⭐⭐⭐⭐⭐ 5.0 • 20 Reviews on Google</div>
+    <div class="btns"><button class="btn btn-green" onclick="document.getElementById('quote').scrollIntoView({behavior:'smooth'})">Get Free Quote →</button><button class="btn btn-white" onclick="window.open('https://wa.me/35799118497')">WhatsApp Us</button></div>
+    <p style="margin-top:16px;font-size:13px">📍 Kanellou Deligianni 5, Kato Polemidia, Limassol 4159<br>🕐 Open 8:30 AM • Closed Now - Opens Wed</p>
+  </div>
+  <div class="hero-right"></div>
+</div>
+
+<div class="section" id="services">
+  <div class="sec-head"><h2>Our Services</h2><p>Bio cleaning for your home & office - no harsh chemicals</p></div>
+  <div class="services">
+    <div class="s-card"><div class="ic">🛋️</div><h3>Sofa & Upholstery Cleaning</h3><p>Deep clean, stain removal & deodorising for all sofas and chairs.</p><button onclick="book('Sofa Cleaning')">Book Now</button></div>
+    <div class="s-card"><div class="ic">🧶</div><h3>Carpet Cleaning</h3><p>Deep steam cleaning, dust & allergen removal. From €29.</p><button onclick="book('Carpet Cleaning')">Book Now</button></div>
+    <div class="s-card"><div class="ic">🛏️</div><h3>Mattress Cleaning</h3><p>Dust mites, bacteria & stains removed. Healthy sleep.</p><button onclick="book('Mattress Cleaning')">Book Now</button></div>
+    <div class="s-card"><div class="ic">🪟</div><h3>Curtain Cleaning</h3><p>Gentle cleaning & freshening for all curtain types.</p><button onclick="book('Curtain Cleaning')">Book Now</button></div>
+    <div class="s-card"><div class="ic">🚗</div><h3>Car Seat Cleaning</h3><p>Interior deep clean for car seats & upholstery.</p><button onclick="book('Car Seat Cleaning')">Book Now</button></div>
+    <div class="s-card"><div class="ic">🏢</div><h3>Office Cleaning</h3><p>Commercial & office spaces - chairs, sofas, carpets.</p><button onclick="book('Office Cleaning')">Book Now</button></div>
+  </div>
+</div>
+
+<div class="section"><div class="why"><div><b>500+</b><span>Happy Customers</span></div><div><b>5.0 ★</b><span>Google Rating</span></div><div><b>100% Bio</b><span>Eco-Friendly Products</span></div><div><b>Same Week</b><span>Fast Booking</span></div></div></div>
+
+<div class="section" id="quote"><div class="quote">
+  <div><h2>Get Your Free Quote Today</h2><p style="color:#D0E8E5;line-height:1.6">Tell us what you need cleaned. We will reply within 1 hour with a free, no-obligation price.</p><ul style="list-style:none;margin-top:18px;line-height:2"><li>✅ Free Inspection & Quote</li><li>✅ Eco-Friendly Bio Products</li><li>✅ Fast Drying 24-48 Hours</li><li>✅ Serving All Limassol Area</li></ul><p style="margin-top:16px">📞 Call: <b>+357 99 118497</b><br>📍 Kanellou Deligianni 5, Kato Polemidia, Limassol 4159</p></div>
+  <div class="form" id="contact"><h3>📝 Request Free Quote</h3><input id="name" placeholder="Your Name"><input id="phone" placeholder="Phone Number"><select id="service"><option>Sofa Cleaning - From €49</option><option>Carpet Cleaning - From €29</option><option>Mattress Cleaning</option><option>Curtain Cleaning</option><option>Car Seat Cleaning</option><option>Office Cleaning</option></select><textarea id="msg" rows="3" placeholder="Tell us - how many sofas / carpets? Any stains?"></textarea><button onclick="sendWA()">Send on WhatsApp →</button><p style="text-align:center;font-size:12px;color:#888;margin-top:8px">We usually reply in under 1 hour</p></div>
+</div></div>
+
+<div class="section" id="reviews"><div class="sec-head"><h2>⭐ 5.0 - What Our Customers Say</h2></div><div class="reviews"><div class="r-card"><div class="stars">★★★★★</div><p style="margin:8px 0;font-size:14px">"Amazing job on our sofa! Looks brand new. Very professional and friendly."</p><b>- Maria K.</b><br><small>Limassol</small></div><div class="r-card"><div class="stars">★★★★★</div><p style="margin:8px 0;font-size:14px">"Best carpet cleaning in Limassol. Eco products, no smell, fast drying."</p><b>- Andreas P.</b><br><small>Kato Polemidia</small></div><div class="r-card"><div class="stars">★★★★★</div><p style="margin:8px 0;font-size:14px">"Booked same week. Mattress is fresh and clean. Highly recommended!"</p><b>- Elena S.</b><br><small>Limassol</small></div></div></div>
+
+<footer><div class="foot"><div><h4>C.A Bio Cleaning Services</h4><p style="font-size:14px;line-height:1.6">Bio-safe upholstery cleaning in Limassol, Cyprus. Safe for family, pets & environment.</p><p style="margin-top:10px">📍 Kanellou Deligianni 5, Kato Polemidia, Limassol 4159, Cyprus<br>📞 +357 99 118497<br>🕐 Opens 8:30 AM Wed</p></div><div><h4>Services</h4><a href="#">Sofa Cleaning</a><a href="#">Carpet Cleaning</a><a href="#">Mattress Cleaning</a><a href="#">Office Cleaning</a></div><div><h4>Quick Links</h4><a href="#">Get Free Quote</a><a href="#">Google Reviews</a><a href="#">Contact Us</a><a href="#">Areas We Serve</a></div></div><div class="copy">© 2026 C.A Bio Cleaning Services - Limassol, Cyprus | Eco Safe Cleaning</div></footer>
+<a class="wa-float" href="https://wa.me/35799118497" target="_blank">💬</a>
+<script>
+function book(s){let m='Hello C.A Bio Cleaning! I want to book: '+s;window.open('https://wa.me/35799118497?text='+encodeURIComponent(m),'_blank')}
+function sendWA(){let n=document.getElementById('name').value;let p=document.getElementById('phone').value;let s=document.getElementById('service').value;let m=document.getElementById('msg').value;let txt='Hello C.A Bio Cleaning! Free Quote Request:\nName: '+n+'\nPhone: '+p+'\nService: '+s+'\nDetails: '+m;window.open('https://wa.me/35799118497?text='+encodeURIComponent(txt),'_blank')}
+</script>
+</body>
+</html>
